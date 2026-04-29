@@ -1,4 +1,4 @@
-# GuisFus Header Height
+# Guisfus Header Height
 
 Small WordPress plugin that exposes the real sticky header height as CSS custom properties, useful for full-height hero sections, banners and layouts that need to account for a fixed or sticky header.
 
@@ -26,9 +26,7 @@ By default, the plugin measures:
 Example markup:
 
 ```html
-<header class="sticky-header-custom">
-  ...
-</header>
+<header class="sticky-header-custom">...</header>
 ```
 
 ## Usage Example

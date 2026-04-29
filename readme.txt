@@ -1,4 +1,4 @@
-=== GuisFus Header Height ===
+=== Guisfus Header Height ===
 Contributors: guisfus
 Tags: css, sticky header, header height, custom properties, hero
 Requires at least: 5.8
@@ -12,7 +12,7 @@ Exposes the real sticky header height as CSS custom properties for full-height h
 
 == Description ==
 
-GuisFus Header Height measures your sticky header on the frontend and writes its current height to CSS custom properties on the root element.
+Guisfus Header Height measures your sticky header on the frontend and writes its current height to CSS custom properties on the root element.
 
 Default variables:
 

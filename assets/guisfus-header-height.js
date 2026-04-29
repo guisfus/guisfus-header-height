@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  const config = window.GuisFusHeaderHeight || {};
+  const config = window.GuisfusHeaderHeight || {};
   const selector = config.headerSelector || ".sticky-header-custom";
   const properties = Array.isArray(config.properties)
     ? config.properties

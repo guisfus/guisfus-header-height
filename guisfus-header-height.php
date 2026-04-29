@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: GuisFus Header Height
+ * Plugin Name: Guisfus Header Height
  * Plugin URI: https://github.com/guisfus/guisfus-header-height
  * Description: Exposes the real sticky header height as CSS custom properties for full-height hero sections and layouts.
  * Version: 1.0.0
@@ -12,7 +12,7 @@
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: guisfus-header-height
  *
- * @package GuisFus_Header_Height
+ * @package Guisfus_Header_Height
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -51,7 +51,7 @@ function guisfus_header_height_enqueue_script() {
 
 	wp_add_inline_script(
 		$handle,
-		'window.GuisFusHeaderHeight = ' . wp_json_encode( $config ) . ';',
+		'window.GuisfusHeaderHeight = ' . wp_json_encode( $config ) . ';',
 		'before'
 	);
 }
