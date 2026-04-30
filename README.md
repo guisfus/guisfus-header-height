@@ -1,4 +1,4 @@
-# Guisfus Header Height
+# Header Height
 
 Small WordPress plugin that exposes the real sticky header height as CSS custom properties, useful for full-height hero sections, banners and layouts that need to account for a fixed or sticky header.
 
@@ -8,12 +8,11 @@ The plugin writes these variables to the root element:
 
 ```css
 :root {
-  --guisfus-header-height: 80px;
-  --header-height-custom: 80px;
+  --header-height: 80px;
 }
 ```
 
-`--header-height-custom` is kept as a compatibility alias. Prefer `--guisfus-header-height` for new code.
+Use `--header-height` in your theme or layout CSS.
 
 ## Default Selector
 
@@ -33,7 +32,7 @@ Example markup:
 
 ```css
 .hero-full-height {
-  min-height: calc(100vh - var(--guisfus-header-height, 0px));
+  min-height: calc(100vh - var(--header-height, 0px));
 }
 ```
 
@@ -42,7 +41,7 @@ Example markup:
 You can change the selector with a WordPress filter:
 
 ```php
-add_filter( 'guisfus_header_height_selector', function () {
+add_filter( 'header_height_selector', function () {
 	return '#site-header';
 } );
 ```

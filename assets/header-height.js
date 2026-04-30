@@ -1,11 +1,11 @@
 (function () {
   "use strict";
 
-  const config = window.GuisfusHeaderHeight || {};
+  const config = window.HeaderHeightConfig || {};
   const selector = config.headerSelector || ".sticky-header-custom";
   const properties = Array.isArray(config.properties)
     ? config.properties
-    : ["--guisfus-header-height", "--header-height-custom"];
+    : ["--header-height"];
 
   let header = null;
   let frame = null;
