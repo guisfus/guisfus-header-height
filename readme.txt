@@ -31,8 +31,25 @@ The selector can be customized with the `header_height_selector` filter.
 
 == Installation ==
 
-1. Upload the plugin folder to `/wp-content/plugins/header-height`.
-2. Activate the plugin in WordPress.
+The GitHub repository uses the `wp-` prefix only to identify it as a WordPress plugin repository. When installing the plugin in WordPress, use the plugin folder name without the `wp-` prefix.
+
+Correct plugin folder: `/wp-content/plugins/header-height/`
+
+Correct ZIP structure: `header-height.zip` containing a root `header-height/` folder with `header-height.php` inside it.
+
+Do not install it as `/wp-content/plugins/wp-header-height/`.
+
+Backend installation:
+
+1. Create a ZIP with `header-height/` as the root folder.
+2. Go to Plugins > Add New > Upload Plugin.
+3. Upload `header-height.zip`.
+4. Activate Header Height.
+
+Manual installation:
+
+1. Upload the `header-height` folder to `/wp-content/plugins/`.
+2. Activate Header Height from the WordPress plugins screen.
 3. Add `.sticky-header-custom` to your sticky header, or customize the selector with the filter.
 
 == Frequently Asked Questions ==

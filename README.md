@@ -53,6 +53,45 @@ add_filter( 'header_height_selector', function () {
 - WordPress 5.8 or higher
 - PHP 7.4 or higher
 
+## Installation
+
+The GitHub repository uses the `wp-` prefix only to identify it as a WordPress plugin repository. When installing the plugin in WordPress, use the plugin folder name without the `wp-` prefix.
+
+Correct plugin folder:
+
+```txt
+wp-content/plugins/header-height/
+```
+
+Correct ZIP structure:
+
+```txt
+header-height.zip
+`-- header-height/
+    |-- header-height.php
+    |-- assets/
+    |-- README.md
+    `-- readme.txt
+```
+
+Do not install it as:
+
+```txt
+wp-content/plugins/wp-header-height/
+```
+
+Backend installation:
+
+1. Create a ZIP with `header-height/` as the root folder.
+2. In WordPress, go to **Plugins > Add New > Upload Plugin**.
+3. Upload `header-height.zip`.
+4. Activate **Header Height**.
+
+Manual installation:
+
+1. Upload the `header-height` folder to `wp-content/plugins/`.
+2. Activate **Header Height** from the WordPress plugins screen.
+
 ## Security
 
 - Runs only on the frontend.
