@@ -17,21 +17,21 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'HEADER_HEIGHT_VERSION', '1.0.0' );
-define( 'HEADER_HEIGHT_FILE', __FILE__ );
+define( 'HHP_VERSION', '1.0.0' );
+define( 'HHP_FILE', __FILE__ );
 
 /**
  * Enqueue the frontend script that measures the header height.
  */
-function header_height_enqueue_script() {
+function hhp_enqueue_script() {
 	if ( is_admin() ) {
 		return;
 	}
 
 	$handle = 'header-height';
-	$src    = plugin_dir_url( HEADER_HEIGHT_FILE ) . 'assets/header-height.js';
+	$src    = plugin_dir_url( HHP_FILE ) . 'assets/header-height.js';
 
-	wp_enqueue_script( $handle, $src, array(), HEADER_HEIGHT_VERSION, true );
+	wp_enqueue_script( $handle, $src, array(), HHP_VERSION, true );
 
 	/**
 	 * Filters the CSS selector used to find the sticky header.
@@ -54,4 +54,4 @@ function header_height_enqueue_script() {
 		'before'
 	);
 }
-add_action( 'wp_enqueue_scripts', 'header_height_enqueue_script' );
+add_action( 'wp_enqueue_scripts', 'hhp_enqueue_script' );

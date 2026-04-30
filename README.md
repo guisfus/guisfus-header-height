@@ -14,6 +14,8 @@ The plugin writes these variables to the root element:
 
 Use `--header-height` in your theme or layout CSS.
 
+If the configured header is not found, the plugin writes `0px` so layouts do not keep a stale height from a previous state.
+
 ## Default Selector
 
 By default, the plugin measures:
@@ -58,6 +60,13 @@ add_filter( 'header_height_selector', function () {
 - Uses WordPress enqueue APIs.
 - Encodes frontend configuration with `wp_json_encode()`.
 - Sanitizes the selector passed through the customization filter.
+- Does not store options, process form submissions, create REST endpoints, or expose AJAX actions.
+
+## Frontend Footprint
+
+- Loads one script: `assets/header-height.js`.
+- Exposes one config object before the script runs: `window.HeaderHeightConfig`.
+- Writes the `--header-height` CSS custom property on `:root`.
 
 ## License
 

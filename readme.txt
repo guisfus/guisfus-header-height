@@ -14,6 +14,8 @@ Exposes the real sticky header height as CSS custom properties for full-height h
 
 Header Height measures your sticky header on the frontend and writes its current height to CSS custom properties on the root element.
 
+If the configured header is not found, the plugin writes `0px` so layouts do not keep a stale height from a previous state.
+
 Default variables:
 
 * `--header-height`
@@ -42,6 +44,10 @@ Yes. The plugin uses browser observers and resize events to keep the CSS variabl
 = Can I use a different header selector? =
 
 Yes. Use the `header_height_selector` filter.
+
+= Does this plugin store data? =
+
+No. It does not store options, process form submissions, create REST endpoints, or expose AJAX actions.
 
 == Changelog ==
 

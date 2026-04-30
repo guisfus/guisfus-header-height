@@ -30,6 +30,9 @@
     const currentHeader = findHeader();
 
     if (!currentHeader) {
+      properties.forEach((property) => {
+        document.documentElement.style.setProperty(property, "0px");
+      });
       return;
     }
 
