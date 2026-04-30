@@ -71,7 +71,8 @@ header-height.zip
     |-- header-height.php
     |-- assets/
     |-- README.md
-    `-- readme.txt
+    |-- readme.txt
+    `-- LICENSE
 ```
 
 Do not install it as:
@@ -109,4 +110,4 @@ Manual installation:
 
 ## License
 
-GPL-2.0-or-later.
+Header Height is licensed under GPL-2.0-or-later. See the `LICENSE` file for details.
