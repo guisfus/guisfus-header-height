@@ -4,7 +4,7 @@ Tags: css, sticky header, header height, custom properties, hero
 Requires at least: 5.8
 Tested up to: 6.5
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.1.1
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -67,6 +67,10 @@ Yes. Use the `header_height_selector` filter.
 No. It does not store options, process form submissions, create REST endpoints, or expose AJAX actions.
 
 == Changelog ==
+
+= 1.1.1 =
+
+Prevent WordPress.org update collisions with a custom update URI.
 
 = 1.0.0 =
 

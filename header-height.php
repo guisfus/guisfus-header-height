@@ -3,11 +3,12 @@
  * Plugin Name: Header Height
  * Plugin URI: https://github.com/guisfus/wp-header-height
  * Description: Exposes the real sticky header height as CSS custom properties for full-height hero sections and layouts.
- * Version: 1.0.0
+ * Version: 1.1.1
  * Requires at least: 5.8
  * Requires PHP: 7.4
  * Author: guisfus
  * Author URI: https://github.com/guisfus
+ * Update URI: false
  * License: GPL-2.0-or-later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: header-height
@@ -17,7 +18,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'HHP_VERSION', '1.0.0' );
+define( 'HHP_VERSION', '1.1.1' );
 define( 'HHP_FILE', __FILE__ );
 
 /**
